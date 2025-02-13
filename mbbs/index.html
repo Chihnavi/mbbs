@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Study MBBS Abroad opportunities in top countries with affordable fees and global recognition. Secure your future today!">
+    <meta name="keywords" content="MBBS abroad, Study MBBS, Russia, Uzbekistan, Kazakhstan, Philippines, Georgia, Kyrgyzstan, Egypt">
+    <meta name="author" content="Final Year Computer Science Student">
+    <title>Study MBBS Abroad</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="hero-title">Study MBBS Abroad</h1>
+        <p class="hero-subtitle">Apply now to explore top universities and secure your future!</p>
+        <button class="hero-btn" onclick="scrollToForm()">Apply Now</button>
+    </div>
+
+    <!-- Why Study MBBS Abroad -->
+    <div class="benefits">
+        <h2 class="section-title">Why Study MBBS Abroad?</h2>
+        <ul class="benefits-list">
+            <li>Affordable tuition fees compared to private universities in many countries.</li>
+            <li>Globally recognized degrees allowing you to practice anywhere.</li>
+            <li>Exposure to diverse cultures and international learning experiences.</li>
+        </ul>
+    </div>
+
+    <!-- Top Countries -->
+    <div class="countries">
+        <h2 class="section-title">Top Countries</h2>
+        <p class="countries-subtitle">Explore opportunities in:</p>
+        <div class="country-list">
+            <button class="country-btn" data-country="Russia">Russia</button>
+            <button class="country-btn" data-country="Uzbekistan">Uzbekistan</button>
+            <button class="country-btn" data-country="Kazakhstan">Kazakhstan</button>
+            <button class="country-btn" data-country="Philippines">Philippines</button>
+            <button class="country-btn" data-country="Georgia">Georgia</button>
+            <button class="country-btn" data-country="Kyrgyzstan">Kyrgyzstan</button>
+            <button class="country-btn" data-country="Egypt">Egypt</button>
+        </div>
+    </div>
+
+    <!-- College Details Section -->
+    <div class="college-details" id="collegeDetails">
+        <h2 class="section-title">Popular MBBS Colleges</h2>
+        <div id="collegeContainer" class="college-container"></div>
+    </div>
+
+    <!-- Lead Form -->
+    <div class="form-container" id="lead-form-section">
+        <h2 class="section-title">Get Started</h2>
+        <div class="form-box">
+            <form id="leadForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                
+                <label for="country">Preferred Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Egypt">Egypt</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <!-- Success message container -->
+            <div id="successMessage" class="hidden">
+                <h3>Thank you for submitting your details!</h3>
+                <p>Our team will get back to you shortly.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
